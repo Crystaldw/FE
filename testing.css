@@ -1,0 +1,31 @@
+   /* здесь будут css-стили */
+   p{
+      color: blue;  /* цвет текста */
+       text-align: justify; /*выравнивание по ширине */
+        line-height: 1.5; /*растояние между строками */
+        /* letter-spacing: 5px; растояние между символами */
+        text-indent: 20px; /*отступ с новой строки начала параграфа */
+        border-left: 4px solid blue;
+        padding: 20px;
+        margin: 20px;
+   }
+   h1{
+      background: #00bcd4;
+      color: white;
+      text-align: center;/*выравнивание по центру */
+      text-transform: uppercase; /*трансформация текста*/
+      margin-bottom: 50px; /*отступ снизу */
+   }
+   a{
+      color: brown;
+      text-decoration: none;
+   }
+   h2{
+      text-decoration: underline;
+      font-size: 30px;
+      font-weight: 900;
+      /* font-style: italic; */
+   }
+   img{
+      border-radius: 50%;
+   }
