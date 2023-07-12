@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function negativeNum(numbers) {
+        for (let i = 0; i < numbers.length; i++) {
+          if (numbers[i] < 0) {
+            console.log(numbers[i]);
+          }
+        }
+      }
+
+      // Пример использования:
+      let nums = [1, -2, 3, -4, 5, -6];
+      negativeNum(nums);
+
+      // описать трех пользователей-игроков
+      // псевдоним, урон, здоровье
+
+      // вариант 1: скаляры
+      const gamer_1_username = "h4cker556";
+      const gamer_1_damage = 556;
+      const gamer_1_health = 100;
+
+      const gamer_2_username = "from_china";
+      const gamer_2_damage = 123;
+      const gamer_2_health = 90;
+
+      const gamer_3_username = "helloboss";
+      const gamer_3_damage = 1000;
+      const gamer_3_health = 100;
+
+      // вариант 2: массивы
+      const gamer_1 = ["h4cker556", 556, 100];
+      const gamer_2 = ["from_china", 123, 90];
+      const gamer_3 = ["helloboss", 1000, 100];
+      console.log(gamer_3[1]); // вывести ущерб gamer_3
+
+      // вариант 3: объекты
+      const gamer_11 = { username: "h4cker556", damage: 556, health: 100 };
+      const gamer_22 = { username: "from_china", damage: 123, health: 90 };
+      const gamer_33 = { username: "helloboss", damage: 1000, health: 100 };
+      console.log(gamer_22.username); // вывести имя gamer_2
+
+      // Создание
+      let gamer = {};
+
+      // Установка свойств
+      gamer.health = 99;
+      gamer["full name"] = "Ivan Ivanov";
+
+      delete gamer.health;
+
+      console.log(gamer);
+
+      let bol = {};
+      bol["Name"] = "basketbol";
+      bol.cost = 100;
+      bol.items = 10;
+
+      console.log(bol);
+
+      function exchangeCurrency(product, exchangeRate) {
+        return product.price * exchangeRate;
+      }
+      let product = { name: "Товар", price: 500 }; //Цена в EUR
+      let exchangeRate = 1.11; // Пример курса обмена EUR/USD
+      let priceInUSD = exchangeCurrency(product, exchangeRate);
+      console.log(priceInUSD); // Вывод: 555
+    </script>
+  </body>
+</html>

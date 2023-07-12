@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Work 10.07.23</title>
+  </head>
+  <body>
+    <h2>1) Напишите функцию, которая выводит нечетные числа от 0 до 10</h2>
+    <p>function oddNumbers() {</p>
+    <p>for (let i = 1; i <= 10; i += 2) {</p>
+    <p>console.log(i);</p>
+    <p>}</p>
+    <p>}</p>
+    <p>OddNumbers();</p>
+
+    <h2>
+      2) Напишите функцию, которая принимает два числа в качестве диапазона и
+      возвращает сумму чисел в указанном диапазоне
+    </h2>
+    <p>function sumInRange(start, end) {</p>
+    <p>let sum = 0;</p>
+    <p>for (let i = start; i <= end; i++) {</p>
+    <p>sum += i;</p>
+    <p>return sum;</p>
+    <p>}</p>
+    <p>console.log(sumInRange(8, 10)); // Вывод: 27</p>
+    <p>console.log(sumInRange(12, 15)); // Вывод: 54</p>
+    <p>console.log(sumInRange(0, 3)); // Вывод: 6</p>
+    <h2>3) Через массив опишите трех игроков (имя, здоровье, урон)</h2>
+    <p>let players = [</p>
+    <p>['Игрок 1', 'Здоровье: 100', 'Урон: 10' ],</p>
+    <p>['Игрок 2', 'Здоровье: 90', 'Урон: 8' ],</p>
+    <p>['Игрок 3', 'Здоровье: 95', 'Урон: 12' ]</p>
+    <p>];</p>
+    <p>console.log(players[0][0]); // Вывод: Игрок 1</p>
+    <p>console.log(players[1][1]); // Вывод: Здоровье: 90</p>
+    <p>console.log(players[2][2]); // Вывод: Урон: 12</p>
+    <h2>
+      4) Напишите функцию, которая получает массив чисел и возвращает среднее
+      ариф. значение
+    </h2>
+    <p>function averageValue(numbers) {</p>
+    <p>if (numbers.length == 0) {</p>
+    <p>return 0; }</p>
+    <p>let sum = 0;</p>
+    <p>for (let i = 0; i < numbers.length; i++) {</p>
+    <p>sum += numbers[i];</p>
+    <p>}</p>
+    <p>return sum / numbers.length;</p>
+    <p>}</p>
+    <p>let nums = [2, 4, 6, 8, 10];</p>
+    <p>console.log(averageValue(nums)); // Вывод: 6</p>
+    <p>let emptyArray = [];</p>
+    <p>console.log(averageValue(emptyArray)); // Вывод: 0</p>
+    <h2>
+      5) Напишите функцию, которая конвертирует градусы из шкалы по Цельсию в
+      градусы в шкалу по Фаренгейту
+    </h2>
+    <p>function celsiusToFahrenheit(celsius) {</p>
+    <p>let fahrenheit = (celsius * 9 / 5) + 32;</p>
+    <p>return fahrenheit;</p>
+    <p>}</p>
+    <p>let celsiusTemp = 25;</p>
+    <p>let fahrenheitTemp = celsiusToFahrenheit(celsiusTemp);</p>
+    <p>console.log(fahrenheitTemp); // Вывод: 77</p>
+
+    <script>
+      function oddNumbers() {
+        for (let i = 1; i <= 10; i += 2) {
+          console.log(i);
+        }
+      }
+      oddNumbers();
+
+      function sumInRange(start, end) {
+        let sum = 0;
+        for (let i = start; i <= end; i++) {
+          sum += i;
+        }
+        return sum;
+      }
+
+      console.log(sumInRange(8, 10)); // Вывод: 27
+      console.log(sumInRange(12, 15)); // Вывод: 54
+      console.log(sumInRange(0, 3)); // Вывод: 6
+
+      let players = [
+        ["Игрок 1", "Здоровье: 100", "Урон: 10"],
+        ["Игрок 2", "Здоровье: 90", "Урон: 8"],
+        ["Игрок 3", "Здоровье: 95", "Урон: 12"],
+      ];
+
+      console.log(players[0][0]); // Вывод: Игрок 1
+      console.log(players[1][1]); // Вывод: Здоровье: 90
+      console.log(players[2][2]); // Вывод: Урон: 12
+
+      function averageValue(numbers) {
+        if (numbers.length == 0) {
+          return 0;
+        }
+
+        let sum = 0;
+        for (let i = 0; i < numbers.length; i++) {
+          sum += numbers[i];
+        }
+
+        return sum / numbers.length;
+      }
+
+      let nums = [2, 4, 6, 8, 10];
+      console.log(averageValue(nums)); // Вывод: 6
+
+      let emptyArray = [];
+      console.log(averageValue(emptyArray)); // Вывод: 0
+
+      function celsiusToFahrenheit(celsius) {
+        let fahrenheit = (celsius * 9) / 5 + 32;
+        return fahrenheit;
+      }
+      let celsiusTemp = 25;
+      let fahrenheitTemp = celsiusToFahrenheit(celsiusTemp);
+      console.log(fahrenheitTemp); // Вывод: 77
+    </script>
+  </body>
+</html>

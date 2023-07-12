@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery Example</title>
+    <style>
+      * {
+              margin: 0;
+              padding: 0;
+          }
+          body {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+          }
+          .gallery {
+              margin-top:5% ;
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+              gap: 20px;
+             
+             
+          }
+          figure {
+              line-height: 0;
+              width: calc(100% / 4 - 60px / 4);
+              height: calc(100% / 4 - 60px / 4);
+              aspect-ratio: 1;
+           }
+      
+          img {
+              width: 48px; 
+              height: 48px;     
+              object-fit: cover;  
+          }
+          </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <figure>
+        <img src="https://via.placeholder.com/150x200" alt="" />
+      </figure>
+      <figure>
+        <img src="https://via.placeholder.com/150" alt="" />
+      </figure>
+      <figure>
+        <img src="https://via.placeholder.com/150" alt="" />
+      </figure>
+      <figure>
+        <img src="https://via.placeholder.com/150" alt="" />
+      </figure>
+      <figure>
+        <img src="https://via.placeholder.com/150" alt="" />
+      </figure>
+      <figure>
+        <img src="https://via.placeholder.com/150" alt="" />
+      </figure>
+      <figure>
+        <img src="https://via.placeholder.com/150" alt="" />
+      </figure>
+      <figure>
+        <img src="https://via.placeholder.com/150" alt="" />
+      </figure>
+      <figure>
+        <img src="https://via.placeholder.com/150" alt="" />
+      </figure>
+    </div>
+  </body>
+</html>

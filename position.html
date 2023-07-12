@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .left,
+      .right {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+      }
+
+      .left {
+        text-align: center;
+      }
+
+      .right {
+        left: 50%;
+        top: 0;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      figure {
+        height: 100%;
+        line-height: 0;
+      }
+
+      h1 {
+        font-size: 40px;
+        margin-top: 30%;
+      }
+      button {
+        color: white;
+        border-radius: 15px;
+        font-size: 15px;
+        background-color: blueviolet;
+        padding: 5px 50px;
+        margin-bottom: 20px;
+      }
+      a {
+        text-align: center;
+        color: blueviolet;
+        text-decoration: none;
+      }
+      form {
+        border-radius: 16px;
+        color: blueviolet;
+        padding: 5px;
+      }
+      input {
+        text-align: center;
+        border-radius: 16px;
+        width: 200px;
+        padding: 5px 10px;
+      }
+      label {
+        margin-left: -90px;
+      }
+      .check {
+        margin-left: -100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="left">
+      <h1>Welcome back</h1>
+      <form>
+        <h4>Email</h4>
+        <input type="email" placeholder="Enter your email" />
+        <h4>Password</h4>
+        <input type="password" placeholder="Enter your password" />
+      </form>
+      <br />
+      <button>Sign in</button>
+      <div class="chekbox">
+        <input class="check" type="checkbox" />
+        <label for="">Remember fo 30 days</label><br />
+        <a href="">Forgot password</a>
+      </div>
+    </div>
+
+    <div class="right">
+      <figure>
+        <img
+          src="https://images.unsplash.com/photo-1661956602944-249bcd04b63f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+          alt=""
+        />
+      </figure>
+    </div>
+  </body>
+</html>
