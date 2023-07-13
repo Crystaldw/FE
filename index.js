@@ -37,5 +37,31 @@ function iven_odd(number) {
 console.log(is_negative(-20));
 console.log(is_negative(15));
   
-  
-  
+let test = [ [1, 2], ['x', 'y'], 'Andrei' ];
+console.log(test [0][1]);
+console.log(test [1][0]);
+console.log(test 'Andrei');
+
+///// Вывод
+// 2
+// x
+// 'Andrei
+const name = 'Ivan';
+const age = 30;
+const message = `Привет, меня зовут ${name} и мне ${age} лет`;
+const message = 'Привет, меня зовут' +name +' и мне' + age + ' лет';
+
+console.log(message); // Вывод: Привет, меня зовут Ivan и мне 30 лет
+
+
+function negativeNum(numbers) {
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] < 0) {
+      console.log(numbers[i]);
+    }
+  }
+}
+
+// Пример использования:
+let nums = [1, -2, 3, -4, 5, -6];
+negativeNum(nums);

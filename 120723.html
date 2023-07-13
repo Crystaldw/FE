@@ -72,6 +72,36 @@
       let exchangeRate = 1.11; // Пример курса обмена EUR/USD
       let priceInUSD = exchangeCurrency(product, exchangeRate);
       console.log(priceInUSD); // Вывод: 555
+//Задача. Описать пользователя, у которого есть полное имя, два email и два телефона
+      let user = {
+        fullname: "Ivan Ivanov",
+        email: ["1@example.org", "2@example.org"],
+        phones: ["+0000000000", "+1111111111111"],
+      };
+      console.log(user);
+//Задача. Написать функцию, которая принимает товары (массив объектов) и возвращает строку Самый дорогой товар <НАЗВАНИЕ> стоит <NN> EUR
+  function print_most_expensive_product(products) {
+  let max_price = 0;
+  let max_product = null;
+
+  for (let i = 0; i < products.length; i++) {
+    const product = products[i];
+    
+    if (product.price > max_price) {
+      max_price = product.price;
+      max_product = i;
+    }
+  }
+
+  return `Самый дорогой товар ${products[max_product].title} стоит ${products[max_product].price} EUR`;
+}
+
+let products = [
+	{title: 'Product 1', price: 100},
+	{title: 'Product 2', price: 500}
+];
+
+console.log(print_most_expensive_product(products));
     </script>
   </body>
 </html>

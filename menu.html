@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Example</title>
+
+    <style>
+      .row{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+      aside{
+         position: fixed;
+         left: 0;
+         top: 0;
+         background: gold;
+         height: 100%;
+         width: 250px;
+         transform: translateX(-250px);
+         transition: 1s;
+         opacity: 0;
+      }
+      .is-open{
+         transform: translateX(0);
+         opacity: 1;
+         
+      }
+    </style>
+  </head>
+  <body>
+<aside></aside>
+   <div class="row">
+    <h1>About company</h1>
+
+    <button onclick="toggle_menu()">
+      menu
+   </button>
+   </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+      voluptatum nemo soluta expedita aperiam nihil neque quo ducimus, veritatis
+      provident tenetur officia modi minima error officiis cupiditate minus
+      atque quaerat debitis eveniet reiciendis repellendus. Fugiat repellat
+      corrupti, repudiandae est, rem possimus doloremque repellendus illum vero
+      veniam, perspiciatis autem vel. Ad mollitia tempora, veniam excepturi
+      distinctio labore neque eius ducimus inventore. Non deserunt delectus
+      laudantium. Assumenda quis cumque saepe dolores dolore. Dolore deleniti
+      deserunt dolorum suscipit recusandae sint officiis, neque magnam atque
+      aperiam eius culpa sequi ad! Ab, nemo excepturi repellendus temporibus
+      saepe dignissimos fuga possimus maxime libero unde facilis eum aspernatur!
+      Eligendi ipsa, officia at beatae praesentium quod vero. Error alias magni
+      aliquam in voluptas fuga, aspernatur rem tempore odit modi eos, officia
+      quo aperiam quis maiores doloremque. Cumque enim magnam esse suscipit
+      commodi itaque mollitia, repudiandae atque animi, laudantium consectetur?
+      Repellat deleniti aliquid vero praesentium suscipit quod culpa voluptatum
+      saepe numquam odit omnis aut dolore ex rem repellendus expedita totam,
+      accusamus eius assumenda in quasi corporis dignissimos ea hic. Quidem
+      magnam quasi nisi dicta perspiciatis nobis consequatur, amet reprehenderit
+      dolor ab debitis, eum perferendis! Neque nostrum error iusto amet officiis
+      expedita minus consequatur iure facere ad accusamus, sint inventore
+      maiores fugiat voluptas perspiciatis minima? Soluta, laudantium provident!
+      Ut, aspernatur in, officia tempora provident tempore enim cupiditate quo
+      similique quidem explicabo consectetur? Qui nihil fuga ullam error
+      quisquam odio nesciunt, itaque, quibusdam architecto aliquam voluptates
+      numquam, aliquid dolorum beatae ratione corrupti illum odit excepturi
+      dolor exercitationem! Magni, ipsam! In tempore facilis cum iure officia
+      ducimus nihil quos laborum ipsa explicabo. Maiores, repellat voluptatibus
+      laboriosam esse ipsum nostrum dignissimos atque cupiditate voluptatum
+      laudantium, iure quasi, inventore commodi adipisci illum quo tempora
+      architecto soluta dolor dicta accusantium voluptate rerum voluptas sit.
+      Rem expedita dolores, ducimus corporis delectus nihil velit veritatis
+      blanditiis enim?
+    </p>
+
+    
+    <script>
+      function toggle_menu(){
+         const menu = document.querySelector('aside');
+         menu.classList.toggle('is-open');
+      }
+    </script>
+  </body>
+</html>
