@@ -16,18 +16,69 @@
       <li>с наценкой 1.5%</li>
     </p>
     <p>let order_cost = +prompt("Введите цену товара");</p>
-    <p>let diskount = +prompt("Введите скидку");</p>
-    <p>let diskount_cost = order_cost - (order_cost / 100 * diskount);</p>
-    <p>console.log(diskount_cost);</p>
+    <p>console.log(order_cost - (order_cost/100*10));</p>
+    <p>console.log(order_cost + (order_cost/100*10));</p>
+    <p>console.log(order_cost - (order_cost/100*25));</p>
+    <p>console.log(order_cost + (order_cost / 100* 25));</p>
+    <p>console.log(order_cost - (order_cost / 100* 1));</p>
+    <p>console.log(order_cost + (order_cost / 100 * 1.5));</p>
     <h2>
-      2)Запросить у юзера стоимость товара и, если она равна 100 и более, то вывести ее со скидкой в 5%, если менее - без скидки.
+      2)Запросить у юзера стоимость товара и, если она равна 100 и более, то
+      вывести ее со скидкой в 5%, если менее - без скидки.
     </h2>
+    <p>let order_cost = +prompt("Введите цену товара");</p>
+    <p>if(order_cost >=100){</p>
+    <p>console.log(order_cost-(order_cost/100*5));</p>
+    <p>}else{</p>
+    <p>console.log(order_cost);</p>
+    <p>}</p>
+    <h2>3)Запросить у юзера число и сравнить его с нулем</h2>
+    <p>let number = +prompt("Введите любое число отличное от 0");</p>
+    <p>if(number > 0){</p>
+    <p>console.log('Ваше число больше чем 0');</p>
+    <p>} else if(number < 0){</p>
+    <p>console.log('Ваше число меньше чем O');</p>
+    <p>} else{</p>
+    <p>console.log('Ваше число равно 0');</p>
+    <p>}</p>
+    <h2>
+      4)Запросить у юзера число и вывести одну цифру, на которое оно
+      заканчивается (мат.решение)
+    </h2>
+    <p>let number = +prompt("Введите число");</p>
+    <p>console.log(number%10);</p>
 
     <script>
-      let order_cost = +prompt("Введите цену товара");
-      let diskount = +prompt("Введите скидку");
-      let diskount_cost = order_cost - (order_cost / 100) * diskount;
-      console.log(diskount_cost);
+      // 1
+      // let order_cost = +prompt("Введите цену товара");
+      // console.log(order_cost - (order_cost / 100) * 10);
+      // console.log(order_cost + (order_cost / 100) * 10);
+      // console.log(order_cost - (order_cost / 100) * 25);
+      // console.log(order_cost + (order_cost / 100) * 25);
+      // console.log(order_cost - (order_cost / 100) * 1);
+      // console.log(order_cost + (order_cost / 100) * 1.5);
+
+      // 2
+      // let order_cost = +prompt("Введите цену товара");
+      // if (order_cost >= 100) {
+      //   console.log(order_cost - (order_cost / 100) * 5);
+      // } else {
+      //   console.log(order_cost);
+      // }
+
+      // 3
+      // let number = +prompt("Введите любое число отличное от 0");
+      // if(number > 0){
+      //   console.log('Ваше число больше чем 0');
+      // } else if(number < 0){
+      //   console.log('Ваше число меньше чем O');
+      // } else{
+      //   console.log('Ваше число равно 0');
+      // }
+
+      // 4
+      // let number = +prompt("Введите число");
+      // console.log(number%10);
     </script>
   </body>
 </html>
