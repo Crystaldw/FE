@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Work 050723</title>
+  </head>
+  <body>
+    <h2>1) Запросить стоимость товара и вывести ее:</h2>
+    <p>
+      <li>со скидкой 10%</li>
+      <li>с наценкой 10%</li>
+      <li>со скидкой 25%</li>
+      <li>со наценкой 25%</li>
+      <li>со скидкой 1%</li>
+      <li>с наценкой 1.5%</li>
+    </p>
+    <p>let order_cost = +prompt("Введите цену товара");</p>
+    <p>let diskount = +prompt("Введите скидку");</p>
+    <p>let diskount_cost = order_cost - (order_cost / 100 * diskount);</p>
+    <p>console.log(diskount_cost);</p>
+    <h2>
+      2)Запросить у юзера стоимость товара и, если она равна 100 и более, то вывести ее со скидкой в 5%, если менее - без скидки.
+    </h2>
+
+    <script>
+      let order_cost = +prompt("Введите цену товара");
+      let diskount = +prompt("Введите скидку");
+      let diskount_cost = order_cost - (order_cost / 100) * diskount;
+      console.log(diskount_cost);
+    </script>
+  </body>
+</html>
