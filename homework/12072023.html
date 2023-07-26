@@ -40,74 +40,162 @@
       3)Напишите функцию, которая находит сумму всех чисел от 1 до 100 и выводит
       ее в консоль.
     </h2>
-    <script>
-      
-    </script>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
+    <p>function summaNumbers1to100(){</p>
+    <p>let sum = 0;</p>
+    <p>for(let i = 1; i <= 100; i++){</p>
+    <p>sum += i;</p>
+    <p>}</p>
+    <p>console.log('Сумма всех чисел от 1 до 100:', sum);</p>
+    <p>}</p>
+    <p>summaNumbers1to100();</p>
     <h2>
       4)Создайте объект, представляющий человека. У человека должны быть
       свойства "имя", "возраст" и "пол". Выведите информацию о человеке в
       консоль.
     </h2>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
+    <p>let person ={};</p>
+    <p>person.name = 'Oleksii';</p>
+    <p>person.age = 43;</p>
+    <p>person.gender = 'male'</p>
+    <p>console.log('Имя:', person.name);</p>
+    <p>console.log('Возраст:', person.age);</p>
+    <p>console.log('Пол:', person.gender);</p>
     <h2>
       5)Напишите функцию, которая находит наибольшее число в заданном массиве
       чисел
     </h2>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
+    <p>function largestNumber(array) {</p>
+    <p>let max = array[0];</p>
+    <p>for (let i = 1; i < array.length; i++) {</p>
+    <p>if (array[i] > max) {</p>
+    <p>max = array[i];</p>
+    <p>}</p>
+    <p>}</p>
+    <p>return max;</p>
+    <p>}</p>
+    <p>let numbers = [10, 6, 8, 32, 22, 7];</p>
+    <p>let largNumber = largestNumber(numbers);</p>
+    <p>console.log("Наибольшее число из массива:", largNumber);</p>
     <h2>
       6)Создайте массив объектов, представляющих различных студентов. Каждый
       объект должен иметь свойства "имя", "возраст" и "оценка". Выведите
       информацию о каждом студенте в консоль.
     </h2>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
+    <p>let students = [</p>
+    <p>{</p>
+    <p>name: "Иван",</p>
+    <p>age: 20,</p>
+    <p>evaluation: 4.5,</p>
+    <p>},</p>
+    <p>{</p>
+    <p>name: "Мария",</p>
+    <p>age: 19,</p>
+    <p>evaluation: 3.8,</p>
+    <p>},</p>
+    <p>{</p>
+    <p>name: "Петр",</p>
+    <p>age: 22,</p>
+    <p>evaluation: 4.2,</p>
+    <p>}</p>
+    <p>];</p>
+    <p>students.forEach((student) => {</p>
+    <p>console.log(`Имя: ${student.name}`);</p>
+    <p>console.log(`Возраст: ${student.age}`);</p>
+    <p>console.log(`Оценка: ${student.evaluation}`);</p>
+    <p>});</p>
     <h2>
       7)Напишите функцию, которая находит среднее значение всех чисел в заданном
       массиве.
     </h2>
 
+    //
     <script>
-      // 1)
-      // function printNumbersFizzBuzz(){
-      //    for (let i = 1; i <= 100; i ++){
-      //       if (i % 3 == 0 && i % 5 == 0){
-      //          console.log("FizzBuzz");
-      //       }else if (i % 3 == 0){
-      //          console.log("Fizz");
-      //       }else if (i % 5 == 0){
-      //          console.log("Buzz");
-      //       }else{
-      //          console.log(i);
+      //    1)
+
+      //    function printNumbersFizzBuzz(){
+      //       for (let i = 1; i <= 100; i ++){
+      //          if (i % 3 == 0 && i % 5 == 0){
+      //             console.log("FizzBuzz");
+      //          }else if (i % 3 == 0){
+      //             console.log("Fizz");
+      //          }else if (i % 5 == 0){
+      //             console.log("Buzz");
+      //          }else{
+      //             console.log(i);
+      //          }
       //       }
       //    }
+      //    printNumbersFizzBuzz();
+
+      //    2)
+
+      //  let book = {};
+      //  book.title = 'Book';
+      //  book.author = 'Oleksii';
+      //  book.year = 2023;
+      //  console.log(book);
+
+      //   3)
+
+      // function summaNumbers1to100(){
+      //       let sum = 0;
+      //       for(let i = 1; i <= 100; i++){
+      //          sum += i;
+      //       }
+      //       console.log('Сумма всех чисел от 1 до 100:', sum);
+      //    }
+      //    summaNumbers1to100();
+
+      //  4)
+
+      //    let person ={};
+      // person.name = 'Oleksii';
+      // person.age = 43;
+      // person.gender = 'male'
+      // console.log('Имя:', person.name);
+      // console.log('Возраст:', person.age);
+      // console.log('Пол:', person.gender);
+
+      //  5)
+
+      //  function largestNumber(array) {
+      //   let max = array[0];
+      //   for (let i = 1; i < array.length; i++) {
+      //     if (array[i] > max) {
+      //       max = array[i];
+      //     }
+      //   }
+      //   return max;
       // }
-      // printNumbersFizzBuzz();
-      // 2)
-      // let book = {};
-      // book.title = 'Book';
-      // book.author = 'Oleksii';
-      // book.year = 2023;
-      // console.log(book);
+      // let numbers = [10, 6, 8, 32, 22, 7];
+      // let largNumber = largestNumber(numbers);
+      // console.log("Наибольшее число из массива:", largNumber);
+
+      // 6)
+
+      // let students = [
+      //   {
+      //     name: "Иван",
+      //     age: 20,
+      //     evaluation: 4.5,
+      //   },
+      //   {
+      //     name: "Мария",
+      //     age: 19,
+      //     evaluation: 3.8,
+      //   },
+      //   {
+      //     name: "Петр",
+      //     age: 22,
+      //     evaluation: 4.2,
+      //   }
+      // ];
+
+      // students.forEach((student) => {
+      //   console.log(`Имя: ${student.name}`);
+      //   console.log(`Возраст: ${student.age}`);
+      //   console.log(`Оценка: ${student.evaluation}`);
+      // });
     </script>
   </body>
 </html>
