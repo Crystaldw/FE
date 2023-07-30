@@ -107,8 +107,17 @@
       7)Напишите функцию, которая находит среднее значение всех чисел в заданном
       массиве.
     </h2>
+    <p>function average(arr) {</p>
+    <p>let sum = 0;</p>
+    <p>arr.forEach((num) => {</p>
+    <p>sum += num;</p>
+    <p>});</p>
+    <p>return sum / arr.length;</p>
+    <p>}</p>
+    <p>let numbers = [19, 9, 3, 4, 5];</p>
+    <p>let avg = average(numbers);</p>
+    <p>console.log("Среднее значение:", avg);</p>
 
-    //
     <script>
       //    1)
 
@@ -196,6 +205,20 @@
       //   console.log(`Возраст: ${student.age}`);
       //   console.log(`Оценка: ${student.evaluation}`);
       // });
+
+      // 7)
+
+      //       function average(arr) {
+      //   let sum = 0;
+      //   arr.forEach((num) => {
+      //     sum += num;
+      //   });
+
+      //   return sum / arr.length;
+      // }
+      // let numbers = [19, 9, 3, 4, 5];
+      // let avg = average(numbers);
+      // console.log("Среднее значение:", avg);
     </script>
   </body>
 </html>
