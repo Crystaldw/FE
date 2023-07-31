@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <button onclick="startGame()" id="start">Start</button>
+    </header>
+    
+    <div onmousedown="miss(event)" id="area">
+      <div class="start" onmousedown ="hit()" id="object"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
