@@ -1,5 +1,5 @@
 function startGame() {
-  object.classList.add('start');
+  object.classList.add("start");
   // console.log("startGame() works");
 }
 
@@ -15,11 +15,10 @@ function hit() {
   score++;
   document.title = `Score: ${score}`;
 
-
   object.classList.remove("start");
   void object.offsetWidth; //магия
-  object.classList.add('start');
+  object.classList.add("start");
 }
 
 let score = 0;
-let object = document.querySelector('#object');
+let object = document.querySelector("#object");
