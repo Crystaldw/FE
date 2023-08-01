@@ -14,7 +14,7 @@ body {
   aspect-ratio: 1;
   margin-top: 100px;
   /*скрыть при выходе за область поля*/
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 #object {
   background: rgb(215, 110, 12);

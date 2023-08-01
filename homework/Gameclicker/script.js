@@ -1,5 +1,6 @@
 function startGame() {
-  object.classList.add("start");
+  object.classList.add('start');
+  // console.log("startGame() works");
 }
 
 function miss(event) {
@@ -12,12 +13,13 @@ function miss(event) {
 
 function hit() {
   score++;
-  document.title = `Score ${score}`;
-  object.classList.remove('start');
-  void object.offsetWidht;
+  document.title = `Score: ${score}`;
+
+
+  object.classList.remove("start");
+  void object.offsetWidth; //магия
   object.classList.add('start');
 }
 
 let score = 0;
-
-let object = document.qwerySelector('#object');
+let object = document.querySelector('#object');
