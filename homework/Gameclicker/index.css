@@ -28,6 +28,8 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
+
 /*анимация движения обьекта*/
 @keyframes movement {
   to {
