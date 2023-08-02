@@ -5,21 +5,22 @@
 }
 
 body {
-  background: rgb(73, 18, 184);
+  background: rgb(12, 26, 61);
   display: flex;
   justify-content: center;
 }
 
 #area {
-  background: white;
+  background: #fff;
   width: 400px;
   aspect-ratio: 1;
   margin-top: 100px;
-  /*скрыть при выходе за область поля*/
   overflow: hidden;
+ 
 }
+
 #object {
-  background: rgb(215, 110, 12);
+  background: rgb(255, 166, 0);
   width: 60px;
   aspect-ratio: 1;
   transform: translateY(-100%);
@@ -29,10 +30,11 @@ body {
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  position: relative;
 }
 
+/* анимация движения объекга */
 
-/*анимация движения обьекта*/
 @keyframes movement {
   to {
     transform: translateY(400px);

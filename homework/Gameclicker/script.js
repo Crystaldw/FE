@@ -1,38 +1,47 @@
-function startGame() {
+function start_game() {
+  //   console.log("start_game() works");
   object.classList.add("start");
-  console.log("startGame() works");
 }
 
+//промах
 function miss(event) {
-  //event.target.id
+  // console.log("miss() works");
+  // event.target.id
   if (event.target.id == "area") {
     score--;
-    document.title = `Score ${score}`;
+    console.log(score);
   }
 }
 
+// попадание по объекту
 function hit() {
+  //   console.log("hit() works");
   score++;
-  document.title = `Score: ${score}`;
+  console.log(score);
+  document.title = `Score ${score}`;
 
   object.classList.remove("start");
-  void object.offsetWidth; //магия
+  void object.offsetWidth;      // маги
   object.classList.add("start");
 
-  object.style.background = getRandomColor();
-  changeObjectPosition();
-}
-function getRandomColor() {
-  const letters = "0123456789ABCDEF";
-  let color = "#";
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
+  change_object_background();
+  change_object_position();
   }
-  return color;
-}
-function changeObjectPosition(){
-  const randomOffset = Math.floor(Math.random() * maxWidth) + 'px';
-  object.style.left =`${randomOffse}px`;
-}
+
+  //меняет цвет фона объета
+  function change_object_background() {
+    const colors = ['purple', 'gold', 'orange','blue','red'];
+    const index = Math.floor(Math.random() * colors.length);
+    // concole.log(colors[index]);
+    object.style.background = colors[index];
+  }
+//  меняем положение объекта по Х
+  function change_object_position() {
+    const random_offset = Math.random() * 340;
+    object.style.left = `${random_offset}px`;
+
+  }
+
 let score = 0;
+
 let object = document.querySelector("#object");
