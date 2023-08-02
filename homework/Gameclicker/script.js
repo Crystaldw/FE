@@ -18,7 +18,9 @@ function hit() {
   object.classList.remove("start");
   void object.offsetWidth; //магия
   object.classList.add("start");
+
   object.style.background = getRandomColor();
+  changeObjectPosition();
 }
 function getRandomColor() {
   const letters = "0123456789ABCDEF";
@@ -28,7 +30,9 @@ function getRandomColor() {
   }
   return color;
 }
-
-
+function changeObjectPosition(){
+  const randomOffset = Math.floor(Math.random() * maxWidth) + 'px';
+  object.style.left =`${randomOffse}px`;
+}
 let score = 0;
 let object = document.querySelector("#object");
