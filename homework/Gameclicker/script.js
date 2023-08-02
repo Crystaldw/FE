@@ -29,5 +29,6 @@ function getRandomColor() {
   return color;
 }
 
+
 let score = 0;
 let object = document.querySelector("#object");
