@@ -7,19 +7,16 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-
     <div class="wrapper">
-    <header>
-      <button onclick="start_game()" id="start">Start</button>
-    </header>
+      <header>
+        <button onclick="start_game()" id="start">Start</button>
+      </header>
 
-    <div onmousedown="miss(event)" id="area">
-      <div onmousedown="hit()" id="object"></div>
+      <div onmousedown="miss(event)" id="area">
+        <div onmousedown="hit()" id="object"></div>
+      </div>
+
+      <script src="script.js"></script>
     </div>
-
-    <script src="script.js"></script>
-
-  </div>
-
   </body>
 </html>

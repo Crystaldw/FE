@@ -21,26 +21,25 @@ function hit() {
   document.title = `Score ${score}`;
 
   object.classList.remove("start");
-  void object.offsetWidth;      // маги
+  void object.offsetWidth; // маги
   object.classList.add("start");
 
   change_object_background();
   change_object_position();
-  }
+}
 
-  //меняет цвет фона объета
-  function change_object_background() {
-    const colors = ['purple', 'gold', 'orange','blue','red'];
-    const index = Math.floor(Math.random() * colors.length);
-    // concole.log(colors[index]);
-    object.style.background = colors[index];
-  }
+//меняет цвет фона объета
+function change_object_background() {
+  const colors = ["purple", "gold", "orange", "blue", "red"];
+  const index = Math.floor(Math.random() * colors.length);
+  // concole.log(colors[index]);
+  object.style.background = colors[index];
+}
 //  меняем положение объекта по Х
-  function change_object_position() {
-    const random_offset = Math.random() * 340;
-    object.style.left = `${random_offset}px`;
-
-  }
+function change_object_position() {
+  const random_offset = Math.random() * 340;
+  object.style.left = `${random_offset}px`;
+}
 
 let score = 0;
 
