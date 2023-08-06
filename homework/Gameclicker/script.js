@@ -2,6 +2,13 @@ function start_game() {
   //   console.log("start_game() works");
   object.classList.add("start");
 }
+//окончание игры
+function finishGame() {
+  alert("GAME OWER");
+  object.classList.remove("start");
+  gameowerSound.currentTime = 0;
+  gameowerSound.play();
+}
 
 //промах
 function miss(event) {
@@ -9,7 +16,13 @@ function miss(event) {
   // event.target.id
   if (event.target.id == "area") {
     score--;
-    console.log(score);
+    document.title = `Score ${score}`;
+
+    missSound.currentTime = 0;
+    missSound.play();
+  }
+  if (score <= 0) {
+    finishGame();
   }
 }
 
@@ -17,7 +30,6 @@ function miss(event) {
 function hit() {
   //   console.log("hit() works");
   score++;
-  console.log(score);
   document.title = `Score ${score}`;
 
   object.classList.remove("start");
@@ -26,6 +38,20 @@ function hit() {
 
   change_object_background();
   change_object_position();
+  hitSound.currentTime = 0;
+  hitSound.play();
+  sizeObject();
+  speedObject();
+}
+//скорость обьекта при попадании
+function speedObject(){
+  const speed = 3 - Math.random();
+  object.style.animationDuration = `${speed}s`;
+}
+//при попадании размер обьекта
+function sizeObject() {
+  const size = 40 + Math.random() * 40;
+  object.style.width = `${size}px`;
 }
 
 //меняет цвет фона объета
@@ -44,3 +70,7 @@ function change_object_position() {
 let score = 0;
 
 let object = document.querySelector("#object");
+
+const hitSound = new Audio("sounds/hit.wav");
+const missSound = new Audio("sounds/miss.wav");
+const gameowerSound = new Audio("sounds/gameower.wav");
